@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Pig Latin Translator</title>
+        <link rel="stylesheet"
+        type="text/css"
+        href="piglatin.css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" >
+    </head>
+    <body>
+      <div class="pig">
+      <img src="./Images/Demetrius.jpg" alt="Pig" />
+        </div>
+        <h1 style="text-align: center">Pig Latin Translator</h1>
+        <div style="text-align: center">
+            <textarea placeholder="What do you want to say?" style="width: 1000px; height: 75px; text-align:center; font-size: 30px;" type="textbox" id="user-input" ></textarea>
+            <div class=translate>
+              <h6>Click Waddles To Translate!</h6>
+              <button type="button" name="button" id="translate-button" onClick="buttonClick();  playSound()" style="background-image:url(./Images/Waddles.png)"></button>
+              <audio id="play" src="http://www.mattersofgrey.com/audio/Minecraft-zpighurt1.mp3"></audio>
+          </div>
+        </div>
+
+        <div style="text-align: center">
+            <textarea placeholder="What do Pigs Say!" id="user-output" type="textbox" style="width: 1000px; height: 75px; text-align:center; font-size: 30px;" readonly="readonly" disabled="disabled"></textarea>
+            <br/>
+            <button type-"button" name="button" type="submit" id="refresh"> Refresh </button>
+        </div>
+        <h3>
+            <h5 style="text-align: center">Rules of Pig Latin
+            </h5>
+            <div class="container">
+                <ul class="list-group list-group-flush" style="text-align: center">
+                  <li class="list-group-item">For words beginning with a vowel, add "way" to the end.</li>
+                  <li class="list-group-item">For words beginning with one or more consonants, move all of the first consecutive consonants to the end, and add "ay".</li>
+                  <li class="list-group-item">If the first consonants include "qu", move the "u" along with the "q". Don't forget about words like "squeal" where "qu" doesn't come first!</li>
+                  <li class="list-group-item">For words beginning with "y", treat "y" as a consonant.</li>
+                </ul>
+            </div>
+        </h3>
+        <script type="text/javascript" src="piglatin.js"></script>
+    </body>
+</html>
