@@ -15,17 +15,16 @@
         <h1 style="text-align: center">Pig Latin Translator</h1>
         <div style="text-align: center">
             <textarea placeholder="What do you want to say?" style="width: 1000px; height: 75px; text-align:center; font-size: 30px;" type="textbox" id="user-input" ></textarea>
-            <div class=translate>
+          <div class=translate>
               <h6>Click Waddles To Translate!</h6>
-              <button type="button" name="button" id="translate-button" onClick="buttonClick();  playSound()" style="background-image:url(./Images/Waddles.png)"></button>
+              <button type="submit" name="button" id="translate-button" onClick="buttonClick();  playSound()" style="background-image:url(./Images/Waddles.png)"></button>
               <audio id="play" src="http://www.mattersofgrey.com/audio/Minecraft-zpighurt1.mp3"></audio>
+              <input type="button" name="button" value="Clear" id="refresh" onClick="refreshClick()" >
           </div>
         </div>
 
         <div style="text-align: center">
-            <textarea placeholder="What do Pigs Say!" id="user-output" type="textbox" style="width: 1000px; height: 75px; text-align:center; font-size: 30px;" readonly="readonly" disabled="disabled"></textarea>
-            <br/>
-            <button type-"button" name="button" type="submit" id="refresh"> Refresh </button>
+            <textarea placeholder="What do Pigs Say!" id="user-output" type="textbox" style="width: 1000px; height: 75px; text-align:center; font-size: 30px;" readonly="readonly"></textarea>
         </div>
         <h3>
             <h5 style="text-align: center">Rules of Pig Latin

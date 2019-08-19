@@ -57,17 +57,6 @@ const function4 = (str) => {
     return str.substr(str.indexOf(searchTerm) + 2) + str.substr(0, str.indexOf(searchTerm) + 2) + "ay"
 }
 
-// Submits the user input for translation and outputs the results
-function buttonClick(){
-    let userInput = document.getElementById("user-input").value
-    document.getElementById("user-output").innerHTML = pigLatin(userInput)
-}
-
-// Clears both the input and output text areas
-document.getElementById("refresh").onclick = function() {
-  document.getElementById("user-input").value = ""
-  document.getElementById("user-output").value = ""
-}
 
 // function takes in a string
 const pigLatin = (str) => {
@@ -96,6 +85,18 @@ const pigLatin = (str) => {
     }
     // Join the string together with spaces between each word
     return finalArr.join(" ")
+}
+
+// Submits the user input for translation and outputs the results
+function buttonClick(){
+  let userInput = document.getElementById("user-input").value
+  document.getElementById("user-output").innerHTML = pigLatin(userInput)
+  console.log(pigLatin(userInput))
+}
+
+function refreshClick(){
+  document.getElementById("user-input").value = ""
+  document.getElementById("user-output").value = ""
 }
 
 // A function that calls our pig noise
