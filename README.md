@@ -1,6 +1,6 @@
 This project was built with Javascript, HTML and CSS.
 
-To use, simply type the phrase or word that you wish to translate into the top input box. Upon clicking on Waddles (the pig button), the user's input will be returned in the output box. A refresh button has been placed below the output box. If clicked, both the input and output boxes will be cleared.
+To use, simply type the phrase or word that you wish to translate into the top input box. Upon clicking on Waddles (the pig button), the user's input will be returned in the output box. A clear button has been placed to the right of the submit button. If clicked, both the input box will be cleared.
 
 
 Rules of Pig Latin
