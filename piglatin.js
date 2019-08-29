@@ -96,7 +96,8 @@ function buttonClick(){
 
 function refreshClick(){
   document.getElementById("user-input").value = ""
-  document.getElementById("user-output").value = ""
+  document.getElementById("user-output").innerHTML = ""
+  console.log(refreshClick())
 }
 
 // A function that calls our pig noise
